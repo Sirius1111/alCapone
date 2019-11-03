@@ -1,0 +1,55 @@
+@import 'vars';
+@import "./modules/normalize.scss";
+@import "./components/title-blocks/title-blocks.scss";
+    body{
+        &.fixed{
+            overflow: hidden;
+        }
+    }
+    *{
+        box-sizing: border-box;
+    }
+
+    .wrap {
+        max-width: 1170px;
+        margin: 0 auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+    .my-row{
+        display: flex;
+        align-items: center;
+    }
+    .mobile{
+        display: none;
+    }
+    .dark{
+        background: $main-color;
+        color: $text-main-color;
+    }
+    .yellow{
+        background: $third-color;
+        color: $text-third-color;
+    }
+    .white{
+        background: $second-color;
+        color: $text-second-color;
+    }
+
+    @include media-breakpoint-down(ss){
+        .desc{
+            display: none;
+        }
+        .mobile{
+            display: inline-block;
+        }
+    }
+
+    /* Jquery  */
+
+.current{
+    overflow: inherit !important;
+    visibility: inherit!important;
+    opacity: 1 !important;
+    transform: translateY(100%)!important;
+}

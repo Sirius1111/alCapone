@@ -1,0 +1,115 @@
+@import "../../vars";
+
+.language_container{
+    list-style: none;
+    .lang_change{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        &:hover{
+            overflow: inherit;
+            .sublang{
+                opacity: 1;
+            }
+        }
+        .sublang{
+            transition: all .3s ease-in-out;
+            text-transform: uppercase;
+            position: absolute;
+            opacity: 0;
+            bottom: -6px;
+            left: 50%;
+            cursor: default;
+            background: $main-color;
+            padding: 10px;
+            border-radius: 5px;
+            transform: translate(-50%,100%);
+            &::after{
+                content: '';
+                position: absolute;
+                top: -5px;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 0;
+                height: 0;
+                border-style: solid;
+                border-width: 0 5px 5px 5px;
+                border-color: transparent transparent $main-color transparent;                
+            }
+            li{
+                border-radius: 5px;
+                margin-bottom: 5px;
+                border: 2px $text-main-color solid;
+                list-style: none;
+                background: $main-color;
+                font-size: rem(16);
+                transition: all .3s ease-in-out;
+                &:last-child{
+                    margin-bottom: 0;
+                }
+                &:hover{
+                    border-color: rgba($color: #000, $alpha: 0);
+                    filter: invert(1);
+                }
+                a{
+                    display: inline-block;
+                    padding: 5px 10px;
+                    color: $text-main-color;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+// /*==========  Desktop First  ==========*/
+// ≥1200px
+
+@include media-breakpoint-down(lg){
+ 
+
+}
+
+// ≥992px
+@include media-breakpoint-down(md){
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm){
+    .language_container .lang_change .sublang{
+        padding: 10px 0;
+        li{
+            border-width: 1px;
+            font-size: rem(14);
+        }
+    } 
+}
+
+// ≥480px
+@include media-breakpoint-down(ss){
+    .language_container{
+        margin-bottom: 5px;
+    }
+    .language_container .lang_change .sublang{
+        bottom: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        display: flex;
+        &::after{
+            display: none;
+        }
+        li{
+            &:last-child{
+                margin-bottom: 5px;
+            }
+        }
+    }
+}
+
+// 0
+@include media-breakpoint-down(xs){
+
+}

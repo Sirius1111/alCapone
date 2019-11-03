@@ -1,0 +1,25 @@
+@import "./_mixins/_rem-size.scss";
+@import "./_mixins/_breacpoints.scss";
+
+
+$blue: #428BFF;
+$dark: #333;
+$main-color: #222;
+$second-color: #fff;
+$third-color: #FFC649;
+$text-main-color: #fff;
+$text-second-color: #222;
+$text-third-color: #222;
+// $text-second-color: #fff;
+// $element-color: #ff600a;
+
+
+$main-font: "Roboto";
+
+/* 
+@mixin transition($events:all, $time: .2s) {
+  transition: $events $time ease-in-out;
+}
+
+
+ */

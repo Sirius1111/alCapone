@@ -1,0 +1,17 @@
+@import "fonts";
+@import "vars";
+@import "classes";
+@import "./modules/prelolader.scss";
+@import "./modules/banner.scss";
+@import "./modules/header.scss";
+@import "./modules/benifist.scss";
+@import "./modules/tabs.scss";
+
+
+main{
+    font-family: $main-font;
+    &.dark{
+        background: #222;
+    }
+}
+@import "media";     // Always at the end

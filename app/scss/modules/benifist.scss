@@ -1,0 +1,99 @@
+@import '../vars';
+
+.benifist{
+    .my-row{
+        padding: 25px 0;
+        justify-content: space-between;
+    }
+    .card{
+        width: 30%; 
+        padding: 10px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        .card_icon{
+            transition: .2s all ease-in-out;
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            font-size: rem(40);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .card_title{
+            font-size: rem(20);
+            margin: 15px 0;
+            h3{
+                font-weight: 400;
+            }
+        }
+        .card_text{
+            font-weight: 300;
+        }
+        .card_link{
+            margin: 15px 0 10px;
+            a{
+                color: $text-main-color;
+                text-decoration: underline;
+                &:hover{
+                    text-decoration: none;
+                }
+            }
+        }
+        &:hover{
+            .card_icon{
+                background: $dark;
+                color: $blue;
+            }
+        }
+    }
+}
+
+
+
+
+// /*==========  Desktop First  ==========*/
+// ≥1200px
+
+@include media-breakpoint-down(lg){
+ 
+
+}
+
+// ≥992px
+@include media-breakpoint-down(md){
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm){
+    .benifist{
+        .my-row{
+            flex-wrap: wrap;
+            justify-content: center;
+            .card{
+                margin: 0 15px 10px;
+                width: 300px;
+            }
+        }
+    }
+}
+
+// ≥480px
+@include media-breakpoint-down(ss){
+    .benifist{
+        .my-row{
+            .card{
+                margin: 10px 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+// 0
+@include media-breakpoint-down(xs){
+
+}

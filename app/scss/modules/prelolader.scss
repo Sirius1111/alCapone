@@ -1,0 +1,98 @@
+@import '../vars';
+
+.prelolader{
+    width: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    height: 100vh;
+    transition: opacity .5s ease-in-out;
+    &.dark{
+        background: #222;
+        .wrap{
+            .my-row{
+                #white_logo{
+                    path{
+                        fill: rgba(250, 250, 250, 0);
+                        stroke: rgba(250, 250, 250, 0);
+                    }
+                    &.animate{
+                        path{
+                            fill: rgba(250, 250, 250, 1);
+                            stroke:rgba(250, 250, 250, 1);
+                            animation: preload-dark 5s ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .wrap{
+        height: 100%;
+        .my-row{
+            height: 100%;
+            align-items: center;
+            #white_logo{
+                margin: auto;
+                width: 30%;
+                path{
+                    stroke-dasharray: 1250;
+                    stroke-dashoffset: 1250;
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
+
+// /*==========  Desktop First  ==========*/
+// ≥1200px
+
+@include media-breakpoint-down(lg){
+ 
+
+}
+
+// ≥992px
+@include media-breakpoint-down(md){
+
+}
+
+// ≥768px
+@include media-breakpoint-down(sm){
+
+}
+
+// ≥480px
+@include media-breakpoint-down(ss){
+    .prelolader .wrap .my-row #white_logo{
+        width: 60%;
+    }
+}
+
+// 0
+@include media-breakpoint-down(xs){
+
+}
+
+@keyframes preload-dark {
+    0%{
+        opacity: 0;
+        fill: rgba(250, 250, 250, 0);        
+        stroke-dashoffset: 2500;
+    }
+    50%{
+        opacity: 1;
+        fill: rgba(250, 250, 250, 0);
+        stroke-dashoffset: 100;
+    }
+    90%{
+        fill: #fff;
+    }
+    100%{
+        opacity: 1;
+        fill: #fff;
+        stroke-dashoffset: 0;
+    }
+}
