@@ -59,9 +59,7 @@
 
 // ≥992px
 @include media-breakpoint-down(md){
-    .banner .banner_container .wrap .my-row h1{
-        font-size: rem(25);
-    }
+
 }
 
 // ≥768px

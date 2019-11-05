@@ -31,8 +31,24 @@
         }
     }
 
-    /* Jquery  */
+// ≥480px
+@include media-breakpoint-down(ss){
+    body{
+        .wrap{
+            padding: 0 10px;
+        }
+        .title{
+            font-size: rem(50);
+        }
+        .lead{
+            font-size: rem(18);
+        }
+    }
+}
 
+
+
+/* Jquery  */
 .current{
     overflow: inherit !important;
     visibility: inherit!important;
