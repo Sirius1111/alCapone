@@ -6,11 +6,9 @@
     z-index: 0;
     position: relative;
     overflow: hidden;
-    &.dark{
-        .banner_container{
-            background: rgba(0, 0, 0, 0.7);
-
-        }
+    color: $color-white;
+    .banner_container{
+        background: rgba(0, 0, 0, 0.7);
     }
     .banner_image{
         position: relative;
@@ -74,9 +72,6 @@
 @include media-breakpoint-down(ss){
     .banner .banner_container {
         padding: 15px 10px;
-        .wrap .my-row h1{
-            font-size: rem(18);
-        }
     }
 
 }

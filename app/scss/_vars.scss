@@ -2,19 +2,21 @@
 @import "./_mixins/_breacpoints.scss";
 
 
-$blue: #428BFF;
-$dark: #333;
-$main-color: #222;
-$second-color: #fff;
-$third-color: #FFC649;
-$text-main-color: #fff;
-$text-second-color: #222;
-$text-third-color: #222;
-// $text-second-color: #fff;
-// $element-color: #ff600a;
-
-
+// Colors
+$color-base:                                                            #17bed2 !default;
+$color-white:                                                           #fff !default;
+$color-heading:                                                        	#34363a !default;
+$color-subtitle:                                                        #a6a7aa !default;
+$color-link:                                                        		#81848f !default;
+$color-link-hover:                                                      #999caa !default;
+$color-sky-light:                                                      	#fafafa !default;
 $main-font: "Roboto";
+
+$blue: #428BFF;
+$dark: #428BFF;
+$main-color: #fff;
+$text-color: #333;
+
 
 /* 
 @mixin transition($events:all, $time: .2s) {

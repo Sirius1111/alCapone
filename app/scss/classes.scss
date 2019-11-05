@@ -1,6 +1,5 @@
 @import 'vars';
 @import "./modules/normalize.scss";
-@import "./components/title-blocks/title-blocks.scss";
     body{
         &.fixed{
             overflow: hidden;
@@ -23,19 +22,6 @@
     .mobile{
         display: none;
     }
-    .dark{
-        background: $main-color;
-        color: $text-main-color;
-    }
-    .yellow{
-        background: $third-color;
-        color: $text-third-color;
-    }
-    .white{
-        background: $second-color;
-        color: $text-second-color;
-    }
-
     @include media-breakpoint-down(ss){
         .desc{
             display: none;

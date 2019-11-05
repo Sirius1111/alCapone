@@ -18,7 +18,6 @@ $('document').ready(function () {
     
     let header = document.querySelector("header");
     let menu = document.querySelector("nav .nav");
-    let themeChange = document.getElementById("theme");
     let menuToggle = document.querySelector(".btn_toggle_mobile");
     
 	// WOW
@@ -35,13 +34,10 @@ $('document').ready(function () {
         if(h > 0){
             header.classList.add("active");
             header.classList.add("no-top");
-            themeChange.classList.remove("active");                        
-            themeChange.classList.add("no-top");                        
+                                 
         } else if(h <= 0 && !myHasClass(menuToggle,"active")) {
             header.classList.remove("active");
-            header.classList.remove("no-top");            
-            themeChange.classList.add("active");            
-            themeChange.classList.remove("no-top");            
+            header.classList.remove("no-top");                        
         }
     });
 
@@ -64,9 +60,6 @@ $('document').ready(function () {
             menuToggle.classList.add("active");
             header.classList.add("active");
             menu.classList.add("current");
-            if(myHasClass(themeChange,"active")){
-                themeChange.classList.remove("active");            
-            }
             menuToggle.style.pointerEvents = "none"
             setTimeout(() => {
                 menuToggle.style.pointerEvents = "auto"
@@ -77,9 +70,6 @@ $('document').ready(function () {
                 header.classList.remove("active");            
             }         
             menu.classList.remove("current");  
-            if(!myHasClass(themeChange,"active") && !myHasClass(themeChange,"no-top")){
-                themeChange.classList.add("active");            
-            }
             menuToggle.style.pointerEvents = "none"
             setTimeout(() => {
                 menuToggle.style.pointerEvents = "auto"
