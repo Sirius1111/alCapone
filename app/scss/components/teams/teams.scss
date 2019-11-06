@@ -1,0 +1,100 @@
+@import "../../vars";
+
+.teams {
+    .swiper-container {
+        width: 100%;
+        padding: 50px 0 100px;
+        .team-member {
+            margin: 0 auto;
+            background:#fff;
+            .img-container { 
+                position: relative;
+                img{
+                    width: 100%;
+                } 
+                .img-hover {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    z-index: 5;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba(0,0,0,0.5);
+                    opacity:0;
+                    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+                    -webkit-transition: all 0.3s ease;
+                       -moz-transition: all 0.3s ease;
+                         -ms-transition: all 0.3s ease;
+                          -o-transition: all 0.3s ease;
+                              transition: all 0.3s ease;
+                    .brand-bg {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        text-align:center;
+                        height: 100%;
+                        a{
+                            margin: 0 10px;
+                            display:inline-block;
+                            width:35px;
+                            height:35px;
+                            text-align:center;
+                            line-height:35px;
+                            color:#fff;
+                            border-radius:50px;
+                            i {
+                                margin: 0 0px;
+                            }
+                        }
+                    }
+                }
+            }
+            &:hover .img-container .img-hover {
+                opacity:1;
+                -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+            }
+            .team-details {
+                padding: 10px 10px;
+                text-align: center;
+                border:1px solid #e7e7e7;
+                border-top:0px;
+                -webkit-transition: all 0.3s ease;
+                   -moz-transition: all 0.3s ease;
+                    -ms-transition: all 0.3s ease;
+                     -o-transition: all 0.3s ease;
+                        transition: all 0.3s ease;
+                h4 {
+                    -webkit-transition: all 0.3s ease;
+                        -moz-transition: all 0.3s ease;
+                        -ms-transition: all 0.3s ease;
+                            -o-transition: all 0.3s ease;
+                            transition: all 0.3s ease;
+                }
+                .deg,p {
+                    -webkit-transition: all 0.3s ease;
+                       -moz-transition: all 0.3s ease;
+                        -ms-transition: all 0.3s ease;
+                         -o-transition: all 0.3s ease;
+                            transition: all 0.3s ease;
+                }
+                .deg {
+                    display: block;
+                    color:#aaa;
+                }
+                &:hover{
+                    .team-details {
+                        border-top:0px ;
+                        background:#32c8de;
+                        h4 { 
+                            color: #fff; 
+                        }
+                        .deg,p{
+                            color: #fff; 
+    
+                        }
+                    } 
+                }
+            }
+        }
+    }
+}
