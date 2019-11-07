@@ -3,7 +3,7 @@
 
 
 // Colors
-$color-base:                                                            #17bed2 !default;
+$color-base:                                                            #007aff !default;
 $color-white:                                                           #fff !default;
 $color-heading:                                                        	#34363a !default;
 $color-subtitle:                                                        #a6a7aa !default;
@@ -16,12 +16,3 @@ $blue: #428BFF;
 $dark: #428BFF;
 $main-color: #fff;
 $text-color: #333;
-
-
-/* 
-@mixin transition($events:all, $time: .2s) {
-  transition: $events $time ease-in-out;
-}
-
-
- */

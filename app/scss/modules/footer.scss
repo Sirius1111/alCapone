@@ -1,0 +1,15 @@
+@import "../vars";
+
+footer{
+    background: $color-heading;
+    color: $color-white;
+    .footer-logo{
+        width: 50px;
+        img{
+            width: 100%;
+        }
+    }
+    p{
+        margin-bottom: 0;
+    }
+}

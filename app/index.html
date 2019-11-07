@@ -30,8 +30,9 @@
 </style>
 
 <body>
+	<!-- class fixed начальное состояние -->
 	<main>
-		<section class="prelolader" style="display: none">
+		<section class="prelolader" style="display: none;">
 			<div class="wrap">
 				<div class="my-row">
 					<?xml version="1.0" encoding="utf-8"?>
@@ -1385,6 +1386,81 @@
 				</div>
 			</div>
 		</section>
+		<section class="contact bg-orange" style="display: block;">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6 col-sm-12">				
+						<!-- Contact form -->
+						<div class="contact-form" id="contact-form">
+							<h2 class="title">Contact Form</h2>
+							<form>
+								<!-- Name -->
+								<div class="form-group">
+									<input type="name" required class="form-control" placeholder="Enter Name">
+								</div>
+								<!-- Email -->
+								<div class="form-group">
+									<input type="email" required class="form-control" placeholder="Enter Email">
+								</div>
+								<!-- Matter -->
+								<div class="form-group">
+									<textarea class="form-control" rows="5" placeholder="Enter Message"></textarea>
+								</div>
+								<!-- Button -->
+								<!-- bounceIn - поставить в класс чтобы показать -->
+								<div class="succes-message bg-green animated not">
+									<i class="fas fa-check-circle"></i>
+									<p>Succes</p>
+								</div>
+								<!-- bounceIn - поставить в класс чтобы показать -->
+								<div class="failed-message bg-red animated not">
+									<i class="fas fa-exclamation-circle"></i>
+									<p>Failed</p>
+								</div>
+								<!-- fadeOutLeft - поставить в класс чтобы скрыть -->
+								<button type="submit" class="btn animated">Submit</button> &nbsp; 
+								<!-- fadeOutRight - поставить в класс чтобы скрыть -->
+								<button type="reset" class="btn animated">Reset</button>
+							</form>
+						</div>
+						
+					</div>
+					<div class="col-md-6 col-sm-12">
+						
+						<!-- Contact details -->
+						<div class="contact-details">
+							<h2 class="title">Contact Details</h2>
+							<!-- Email -->
+							<h3><a href="#"><i class="fa fa-envelope"></i> &nbsp; something@gmail.com</a></h3>
+							<!-- Phone -->
+							<h3><a href="#"><i class="fa fa-phone"></i> &nbsp; +39-392-492-4929</a></h3>
+							<!-- Website -->
+							<h3><a href="#"><i class="fa fa-globe"></i> &nbsp; www.something.com</a></h3>
+							
+							<!-- Social media -->
+							<div class="social">
+								<a href="#" class="facebook"><i class="fab fa-facebook"></i></a> &nbsp; 
+								<a href="#" class="twitter"><i class="fab fa-twitter"></i></a> &nbsp; 
+								<a href="#" class="google-plus "><i class="fab fa-google-plus"></i></a> 
+							</div>
+						</div>
+						
+					</div>
+				</div>
+				
+			</div>
+			<!-- Navigation menu end -->
+		</section>
+		<footer class="mastfoot mt-auto py-2">
+			<div class="container">
+				<div class="row px-3 justify-content-between align-items-center">
+					<a class="footer-logo" href="#">
+						<img src="img/logo/Al_white_2.png" alt="">
+					</a>
+					<p class="lead">© Copyright 2019</p>
+				</div>
+			</div>			
+		</footer>
 	</main>
 
 

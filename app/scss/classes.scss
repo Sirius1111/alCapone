@@ -79,7 +79,43 @@
 .dribbble:hover {background: #c700a9;}
 .youtube {background: #ed5441;}
 .youtube:hover {	background: #b72411;}
-
+// bg
+.bg-white {
+    background-color: #ffffff ;
+  }
+  .bg-grey {
+    background-color: #eeeeee ;
+  }
+  .bg-black {
+    background-color: #555555 ;
+  }
+  .bg-red {
+    background-color: #f75353 ;
+  }
+  .bg-green {
+    background-color: #51d466 ;
+  }
+  .bg-lblue {
+    background-color: #32c8de ;
+  }
+  .bg-blue {
+    background-color: #609cec ;
+  }
+  .bg-orange {
+    background-color: #f78153 ;
+  }
+  .bg-yellow {
+    background-color: #fcd419 ;
+  }
+  .bg-purple {
+    background-color: #cb79e6 ;
+  }
+  .bg-rose {
+    background-color: #ff61e7 ;
+  }
+  .bg-brown {
+    background-color: #d08166 ;
+  }
 
 /* Jquery  */
 .current{
@@ -87,4 +123,8 @@
     visibility: inherit!important;
     opacity: 1 !important;
     transform: translateY(100%)!important;
+}
+.not{
+    opacity: 0;
+    display: none!important;
 }
