@@ -1,11 +1,15 @@
 @import "fonts";
 @import "vars";
 @import "classes";
+// home
+    // @import "./modules/banner.scss";
+    // @import "./modules/tabs.scss";
+    // @import "./modules/benifist.scss";
+// no-home
+    @import "./modules/no-home-header.scss";    
+@import "./modules/maps.scss";    
 @import "./modules/prelolader.scss";
-@import "./modules/banner.scss";
 @import "./modules/header.scss";
-@import "./modules/benifist.scss";
-@import "./modules/tabs.scss";
 @import "./modules/aboutUs.scss";
 @import "./modules/contacts.scss";
 @import "./modules/footer.scss";

@@ -1,0 +1,15 @@
+@import "../vars";
+.maps{
+    width: 100%;
+    height: 70vh;
+    iframe{
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@include media-breakpoint-down(ss){
+    .maps{
+        height: 50vh;
+    }
+}
