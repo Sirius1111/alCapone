@@ -5,14 +5,21 @@
     // @import "./modules/banner.scss";
     // @import "./modules/tabs.scss";
     // @import "./modules/benifist.scss";
-// no-home
-    @import "./modules/no-home-header.scss";    
-@import "./modules/maps.scss";    
-@import "./modules/prelolader.scss";
-@import "./modules/header.scss";
-@import "./modules/aboutUs.scss";
-@import "./modules/contacts.scss";
-@import "./modules/footer.scss";
+// all no-home
+    @import "./modules/no-home-header.scss";
+// pricing
+    @import "./modules/pricing.scss";    
+// contacts
+    // @import "./modules/maps.scss";
+
+// home and contacts
+    // @import "./modules/aboutUs.scss";
+
+//  all pages
+    @import "./modules/prelolader.scss";
+    @import "./modules/header.scss";
+    @import "./modules/contacts.scss";
+    @import "./modules/footer.scss";
 
 
 main{
@@ -21,4 +28,3 @@ main{
         background: #222;
     }
 }
-@import "media";     // Always at the end

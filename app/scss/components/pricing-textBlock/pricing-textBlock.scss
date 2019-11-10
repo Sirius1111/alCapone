@@ -1,0 +1,187 @@
+@import "../../vars";
+$var1: #ffffff;
+$var2: #eeeeee;
+$var3: #f75353;
+$var4: #51d466;
+$var5: #fcd419;
+$var6: #d08166;
+$var7: #cb79e6;
+$var8: #ff61e7;
+$var9: #f78153;
+$var10: #32c8de;
+
+.pricing-text {
+    background: $var2;
+	padding: 60px 0px;
+	/* Column Border */
+.pricing-text .col-bor{
+	padding-left:0px;
+	padding-right:0px;
+}
+/* Column Mobile */
+@media(max-width: 500px){
+	.pricing-text .col-mob{
+		width:100%;
+	}
+}
+/* Item */
+.pricing-text .text-item{
+	max-width:295px;
+	display:block;
+	height: 292px;
+	background:#fff;
+	box-shadow:inset 0px 0px 15px rgba(0,0,0,0.05);
+	border:1px solid #eee;
+	margin:0px auto;
+	position:relative;
+	overflow:hidden;
+	 -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}  
+/* Background Color On Hover */  
+.pricing-text .text-item:hover.text-hbg-red{
+	background:#f75353;
+}    
+.pricing-text .text-item:hover.text-hbg-green{
+	background:#51d466;
+}    
+.pricing-text .text-item:hover.text-hbg-yellow{
+	background:#fcd419;
+}    
+.pricing-text .text-item:hover.text-hbg-brown{
+	background:#d08166;
+}    
+.pricing-text .text-item:hover.text-hbg-purple{
+	background:#cb79e6;
+}    
+.pricing-text .text-item:hover.text-hbg-rose{
+	background:#ff61e7;
+}    
+.pricing-text .text-item:hover.text-hbg-orange{
+	background:#f78153;
+}
+.pricing-text .text-item:hover.text-hbg-lblue{
+	background:#32c8de;
+}
+/* Heading */
+.pricing-text .text-item b{
+	text-transform:uppercase;
+	font-size:14px;
+	line-height:30px;
+	display:inline-block;
+}
+/* Paragraph */
+.pricing-text .text-item strong{
+	font-size:13px;
+	line-height:28px;
+	display:inline-block;
+	font-weight:400;
+}
+/* Hover One */
+.pricing-text .text-item .text-hover-one{
+	background:transparent;
+	position:absolute;
+	top:80px;
+	padding:0px 34px;
+	-webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+@media (min-width:767px) and (max-width:1200px){
+	.pricing-text .text-item .text-hover-one{
+		top:30px;
+	}
+}
+.pricing-text .text-item:hover .text-hover-one{
+	top:-280px;
+	color:#fff;
+}
+/* Hover Two */
+	.col-bor {
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	.text-item {
+		max-width: 295px;
+		display: block;
+		height: 292px;
+		background: $var1;
+		box-shadow: inset 0px 0px 15px rgba(0,0,0,0.05);
+		border: 1px solid $var2;
+		margin: 0px auto;
+		position: relative;
+		overflow: hidden;
+		-webkit-transition: all 0.5s;
+		-moz-transition: all 0.5s;
+		-o-transition: all 0.5s;
+        transition: all 0.5s;
+        color: $color-heading;
+		&:hover.text-hbg-red {
+			background: $var3;
+		}
+		&:hover.text-hbg-green {
+			background: $var4;
+		}
+		&:hover.text-hbg-yellow {
+			background: $var5;
+		}
+		&:hover.text-hbg-brown {
+			background: $var6;
+		}
+		&:hover.text-hbg-purple {
+			background: $var7;
+		}
+		&:hover.text-hbg-rose {
+			background: $var8;
+		}
+		&:hover.text-hbg-orange {
+			background: $var9;
+		}
+		&:hover.text-hbg-lblue {
+			background: $var10;
+		}
+		b {
+			text-transform: uppercase;
+			font-size: 14px;
+			line-height: 30px;
+			display: inline-block;
+		}
+		strong {
+			font-size: 13px;
+			line-height: 28px;
+			display: inline-block;
+			font-weight: 400;
+		}
+		.text-hover-one {
+			background: transparent;
+			position: absolute;
+			top: 80px;
+			padding: 0px 34px;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+			-o-transition: all 0.5s;
+			transition: all 0.5s;
+		}
+		&:hover .text-hover-one {
+			top: -280px;
+			color: $var1;
+		}
+		.text-hover-two {
+			background: transparent;
+			position: absolute;
+			top: 550px;
+			padding: 0px 34px;
+			color: $var1;
+			-webkit-transition: all 0.5s;
+			-moz-transition: all 0.5s;
+			-o-transition: all 0.5s;
+			transition: all 0.5s;
+		}
+		&:hover .text-hover-two {
+			top: 80px;
+		}
+	}
+}

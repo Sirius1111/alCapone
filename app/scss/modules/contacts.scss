@@ -85,7 +85,7 @@ $var2: #888888;
             &:not(:hover){
                 background: $var1;
                 i{
-                    color: inherit;
+                    color: $var2;
                 }
             }
 		}

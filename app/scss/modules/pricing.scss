@@ -1,0 +1,42 @@
+@import "../components/pricing-textBlock/pricing-textBlock.scss";
+@import "../vars";
+.price-list{
+    .card-deck{
+        .card{
+            .btn{
+                color: $color-white;
+                background-color: $color-base;
+                border-color: $color-base;
+                &:hover{
+                    color: $color-base;
+                    background-color: transparent;
+                    background-image: none;
+                    border-color: $color-base;
+                }
+                &:not(:disabled):not(.disabled):active:focus{
+                    box-shadow: 0 0 0 0.2rem rgba($color-base, .5);
+                }
+            }
+            &:first-child{
+                .btn{
+                    color: $color-base;
+                    background-color: transparent;
+                    background-image: none;
+                    border-color: $color-base;
+                    &:hover{
+                        color: $color-white;
+                        background-color: $color-base;
+                        border-color: $color-base;
+                    }
+                }
+            }
+        }
+    }
+}
+@include media-breakpoint-down(sm){
+    .price-list{
+        .card-deck{
+            flex-direction: column;
+        }
+    }
+}
